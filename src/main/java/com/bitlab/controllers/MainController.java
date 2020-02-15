@@ -36,15 +36,15 @@ public class MainController {
     @PostMapping(
             path = {"/search"}
     )
-    public String searchbook(@RequestParam("name") String name) {
+    public String searchbook(Model model, @RequestParam("name") String name) {
         ArrayList<Books> books = this.connection.getAllBooks();
-        Model model = null;
         ArrayList<Books> temp = new ArrayList<>();
         for (Books b : books){
             if (name.equals(b.getName())){
                 temp.add(b);
             }
         }
+
         model.addAttribute("books", temp);
         return "/listbook";
     }

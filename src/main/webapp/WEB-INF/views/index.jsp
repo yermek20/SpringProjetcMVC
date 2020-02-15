@@ -16,8 +16,9 @@
 <div class="container mt-5">
     <a href="/listbook" class="btn btn-success">LIST BOOKS</a>
     <a href="/addbook" class="btn btn-success">ADD BOOKS</a>
+    <p></p>
     <div class="row mb-3">
-        <div class="col-sm-12">
+        <div class="col-sm-6">
             <form action="/search" method="post">
 
                 <div class="form-group">

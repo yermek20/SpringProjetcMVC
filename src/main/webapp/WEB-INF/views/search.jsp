@@ -30,12 +30,12 @@
                 </thead>
                 <tbody>
                 <c:forEach items="${books}" var="b">
-                <tr>
-                    <th scope="row">${b.id}</th>
-                    <td>${b.name}</td>
-                    <td>${b.author}</td>
-                    <td>${b.price} $</td>
-                </tr>
+                    <tr>
+                        <th scope="row">${b.id}</th>
+                        <td>${b.name}</td>
+                        <td>${b.author}</td>
+                        <td>${b.price} $</td>
+                    </tr>
                 </c:forEach>
                 </tbody>
             </table>

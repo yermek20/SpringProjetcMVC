@@ -14,7 +14,7 @@ public class DBManager {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             this.connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/books?useUnicode=true&serverTimezone=UTC", "root", "");
+                    "jdbc:mysql://remotemysql.com:3306/UOiKi1ZtNw?useUnicode=true&serverTimezone=UTC", "UOiKi1ZtNw", "MHBziq1AQH");
         } catch (Exception var2) {
             var2.printStackTrace();
         }
